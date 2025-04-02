@@ -1,19 +1,24 @@
+<!--src/app/components/motion/motion.component.html-->
 <div class="sensor-container">
+
   <div class="sensor-section">
     <h2>Giroscopio</h2>
     <div class="sensor-data">
-      <p>Alpha: {{ motionData.rotation?.alpha ?? 'No data' }}°</p>
-      <p>Beta: {{ motionData.rotation?.beta ?? 'No data' }}°</p>
-      <p>Gamma: {{ motionData.rotation?.gamma ?? 'No data' }}°</p>
-      <p>Ángulo de inclinación: {{ motionData.angle?.toFixed(2) ?? 'No data' }}°</p>
+      <p>Alpha: {{motionData.rotation?.alpha ?? 'No data'}}°</p>
+      <p>Beta: {{motionData.rotation?.beta ?? 'No data'}}°</p>
+      <p>Gamma: {{motionData.rotation?.gamma ?? 'No data'}}°</p>
     </div>
   </div>
 </div>
 
+
+
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
-      <canvas #canvas3d width="400" height="400" style="border:1px solid black;"></canvas>
+    <div class="col-12">
+      <canvas id="canvas3d" width="600" height="400" style="width: 100%; height: auto;"></canvas>
     </div>
   </div>
 </div>
+
+ 
