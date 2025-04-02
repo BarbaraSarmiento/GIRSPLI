@@ -70,7 +70,7 @@ export class MotionComponent implements OnInit, OnDestroy, AfterViewInit {
 
   rotateCanvas() {
     const canvas = this.canvasRef.nativeElement;
-    const ctx = canvas.getContext('2d');
+    const ctx = canvas.getContext('3d');
     if (!ctx) return;
 
     const { alpha, beta, gamma } = this.motionData.rotation || { alpha: 0, beta: 0, gamma: 0 };
